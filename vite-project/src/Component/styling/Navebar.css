@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.logo-desing{
+    width: 3rem;
+    height: 3rem;
+    border: solid 3px white;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: linear-gradient(to right, #d9b2db, #d644d9);
+    background: linear-gradient(to right, #f200ff, #e7dee8); 
+
+    box-shadow: 0 0 5px #e7dee8, 0 0 10px #e7dee8, 0 0 15px #e7dee8;
+    transition: all 0.3s ease-in-out;
+    
+}
+.logo-desing:hover{
+    box-shadow: 0 0 10px #e7dee8, 0 0 20px #e7dee8, 0 0 30px #e7dee8;
+    border: solid 3px #e7dee8;
+    transition: all 0.3s ease-in-out;
+}
+.logo-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.logo-image:hover{
+    transform: scale(1.1);
+}
+
+
+
+a{
+    text-decoration: none;
+    gap: 0.3rem;
+    color: black;
+    list-style: none;
+    font-weight: 200;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-name-div{
+    font-family: 'Poppins', sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.my-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.2;
+}
+.my-tile{
+    font-size: 1.0rem;
+    color: gray;
+    font-weight: 400;
+}
+
+.icons-hover{
+    padding: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+   font-weight: bolder;
+    transition: all 0.3s ease-in-out;  
+}
+.icons-hover a{
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.icons-hover:hover{
+    background: linear-gradient(to right, lab(91.28% 7.05 -5.71), hsl(311, 38%, 89%));
+
+    transition: all 0.3s ease-in-out;
+    color: #cf36d4;
+    cursor: pointer;
+    a{
+        color:rgba(124, 3, 194, 0.723);
+    }
+}
+
+/* cofee 👇 */
+
+.container-cofee{
+     border: 1px solid rgba(0, 0, 0, 0.131) !important;
+   border-radius: 450% !important;
+   padding: 0.4em !important;
+   font-size: large !important;
+   font-weight: bolder !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.coffee:hover{
+   scale: 1.2 !important;
+}
+
+
+
+/* tool tip */
+/* make tooltip background gradient */
+.tooltip .tooltip-inner {
+   background: white;
+  color: rgba(132, 11, 146, 0.091);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  color: black !important;
+
+ 
+}
+
+/* change arrow color to match */
+.tooltip .tooltip-arrow::before {
+  border-bottom-color: #2575fc !important;
+}

@@ -1,0 +1,65 @@
+ <nav className="naveber border-bottom fixed-top d-flex align-items-center justify-content-between py-2 px-3">
+  {/* Left: Profile */}
+  <div className="d-flex align-items-center gap-2">
+    <div className="logo-desing">
+      <img className="logo-image" src={profile} alt="Profile Logo" />
+    </div>
+    {/* Hide text on mobile */}
+    <div className="logo-name-div  d-md-block">
+      <h5 className="m-0 p-0 my-name">Paul Innocent</h5>
+      <p className="text-gray m-0 p-0 my-tile">Full stack Developer</p>
+    </div>
+  </div>
+
+  {/* Right: Coffee + Toggle */}
+  <div className="d-flex align-items-center gap-3">
+    {/* Coffee tooltip */}
+    <a
+      href="#"
+      className="flex container-cofee items-center justify-center p-2"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      title="Buy Me a Coffee ☕"
+    >
+      <i className="bi bi-cup-hot fs-5"></i>
+    </a>
+
+    {/* Toggle button (only visible on mobile) */}
+    <button
+      className="navbar-toggler d-md-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  {/* Offcanvas Menu */}
+  <div
+    className="offcanvas offcanvas-end"
+    tabIndex="-1"
+    id="mobileMenu"
+    aria-labelledby="mobileMenuLabel"
+  >
+    <div className="offcanvas-header">
+      <h5 className="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button
+        type="button"
+        className="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div className="offcanvas-body">
+      <ul className="navbar-nav gap-3">
+        <li><a className="nav-link" href="#"><i className="bi bi-house"></i> Home</a></li>
+        <li><a className="nav-link" href="#"><i className="bi bi-person"></i> About</a></li>
+        <li><a className="nav-link" href="#"><i className="bi bi-file-earmark-code"></i> Projects</a></li>
+        <li><a className="nav-link" href="#"><i className="bi bi-box2"></i> Templates</a></li>
+        <li><a className="nav-link" href="#"><i className="bi bi-chat-left"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
