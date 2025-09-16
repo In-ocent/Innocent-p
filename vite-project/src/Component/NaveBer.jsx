@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import { Tooltip } from "bootstrap";
 import { Link } from "react-router-dom"; // for routing
 
